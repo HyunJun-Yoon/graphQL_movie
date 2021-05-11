@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon",
-    "build": "npm run build:js && npm run build:mjs"
+    "build": "npm run build:js && npm run build:mjs",
+    "build:js": "babel src --out-dir lib",
+    "build:mjs": "MODULE=true babel src --out-dir lib --keep-file-extension"
   },
   "author": "",
   "license": "ISC",
