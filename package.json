@@ -4,7 +4,8 @@
   "description": "Movie API with Graphql",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon"
+    "start": "nodemon",
+    "build": "npm run build:js && npm run build:mjs"
   },
   "author": "",
   "license": "ISC",
